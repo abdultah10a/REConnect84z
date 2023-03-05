@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+    <title>REConnecT84 | </title><script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/tailwindcss">
+      @layer utilities {
+          .textShadow{
+              text-shadow: -3px 3px 0 red;
+          }
+      }
+      
+  </style>
+
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+
+              }
+          }
+      }
+  </script>
+
+  </head>
+  <body>
+      <div>
+        <div class="fixed top-[3px] right-[100px] text-[30px] cursor-pointer">
+          <ion-icon name="menu" onclick="Open(this)"></ion-icon>
+        </div>
+
+        <div class="fixed top-[2px] bg-[#002626] w-0 h-[8vh] text-white flex items-center text-[15px] tracking-[1px] 
+          overflow-hidden origin-left duration-500 " id="hammm">
+          <ul class="flex flex-row">
+            <li class="hover:textShadow duration-500 hover:translate-y-[-5px] ml-[20px] mr-[20px] "><a href="#">Home</a></li>
+            <li class="hover:textShadow duration-500 hover:translate-y-[-5px] mr-[20px] "><a href="#">WeIn84</a></li>
+            <li class="hover:textShadow duration-500 hover:translate-y-[-5px] mr-[20px] "><a href="#">WeAfter84</a></li>
+            <li class="hover:textShadow duration-500 hover:translate-y-[-5px] mr-[20px] "><a href="#">WeIn23</a></li>
+            <li class="hover:textShadow duration-500 hover:translate-y-[-5px] mr-[20px] "><a href="#">Greats</a></li>
+          </ul>
+          <div class="absolute top-[3px] right-[100px] text-[30px] cursor-pointer">
+              <ion-icon name="close" onclick="Close(this)"></ion-icon>
+          </div>
+        </div>
+      </div>    
+      <script>
+          let ham = document.getElementById('hammm')
+          function Open() {
+              ham.classList.add('w-[100%]')
+          }
+          function Close() {
+              ham.classList.remove('w-[100%]')
+          }
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <h1>Give Your Heart<br>A New Life</h1>
+          <p>Success isn't always about greatness. It's about consistency. Consistent hardwork gains success. Greatness will follow.</p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="images/image1.png">
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
